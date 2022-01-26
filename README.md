@@ -157,7 +157,6 @@ DELETE http://localhost:3001/api/catagory/${id}
 ```http
 DELETE http://localhost:3001/api/product/${id}
 ```
-## Support
 
-For support, email pranavsd152@gmail.com or call [+91-(774)-387-1556](#)
+Feel free to contact via email pranavsd152@gmail.com or call [+91-(774)-387-1556](tel:7743871556)
 
