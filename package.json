@@ -4,7 +4,11 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node server/index.js"
+=======
+    "test": "node server.js"
+>>>>>>> 45d61ebbc7ee8c3f7dd511be6a7f10748e84457b
   },
   "author": "pro-nav",
   "license": "ISC",
