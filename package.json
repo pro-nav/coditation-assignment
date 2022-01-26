@@ -4,11 +4,8 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "node server/index.js"
-=======
-    "test": "node server.js"
->>>>>>> 45d61ebbc7ee8c3f7dd511be6a7f10748e84457b
+    "start": "node server/index.js",
+    "server": "cd client && npm start"
   },
   "author": "pro-nav",
   "license": "ISC",
