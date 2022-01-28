@@ -19,7 +19,7 @@ Preferred NodeJS version is `16.x`
 Clone the project
 
 ```bash
-  git clone -b  https://github.com/pro-nav/coditation-assignment.git
+git clone -b no-frontend https://github.com/pro-nav/coditation-assignment.git
 ```
 
 Go to the project directory
