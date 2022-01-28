@@ -1,0 +1,47 @@
+GET http://localhost:3001/api/
+###
+POST http://localhost:3001/api/category
+Content-Type: application/json
+
+{
+    
+}
+###
+POST http://localhost:3001/api/product
+Content-Type: application/json
+
+{
+    "product_name": "Dairy Milk",
+    "product_cost": 30
+}
+###
+GET http://localhost:3001/api/category/
+###
+GET http://localhost:3001/api/category/61f32aee7342f77f1155d54d
+###
+GET http://localhost:3001/api/product/
+###
+GET http://localhost:3001/api/product/61f33d808e90f4861cbccd50
+###
+DELETE http://localhost:3001/api/category/61f3205a226a8c8db4506311
+###
+DELETE http://localhost:3001/api/product/61f32ade7342f77f1155d54b
+###
+PATCH  http://localhost:3001/api/category/61f31b5f3ca665f250deb06b
+Content-Type: application/json
+
+{
+    "child_categories": ["61f32aee7342f77f1155d54d"],
+    "products": ["61f33d248e90f4861cbccd4d"]
+}
+###
+PATCH  http://localhost:3001/api/product/61f33d808e90f4861cbccd50
+Content-Type: application/json
+
+{
+    "product_name": "Updated Name",
+    "product_cost": 25
+}
+###
+GET http://localhost:3001/api/product/c/61f31b5f3ca665f250deb06b
+###

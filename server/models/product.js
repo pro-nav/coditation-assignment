@@ -1,11 +1,7 @@
 const mongoose = require('mongoose')
 
 const productSchema = new mongoose.Schema({
-    product_id: {
-        type: Number,
-        required: true,
-        unique: true
-    },
+    _id: mongoose.Schema.Types.ObjectId,
     product_name:{
         type: String,
         maxlength: 25
@@ -13,9 +9,10 @@ const productSchema = new mongoose.Schema({
     product_cost:{
         type: Number
     },
-    product_catagories: {
-        type: [Number]
-    }
+    product_categories: [{
+        type: mongoose.Schema.Types.ObjectId, ref: 'Category'
+    }]
 })
 
-module.exports = mongoose.model('Product', productSchema)
+const Product = mongoose.model('Product', productSchema)
+module.exports = Product
